@@ -1,0 +1,59 @@
+.image {
+  width: 600px;
+  padding: 50px 50px 50px 50px;
+  background-color: aqua;
+  border: 10px solid black;
+  border-radius: 50%;
+  margin: 50px 50px 50px 50px;
+}
+
+.title {
+  width: 500px;
+  padding: 30px 30px 30px 30px;
+  border: 10px solid green;
+  margin: 0 0 0 100px;
+}
+
+.box-test {
+  padding: 20px 20px 20px 20px;
+  border: 1px solid gray;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px dotted green;
+}
+
+.box-one {
+  background-color: pink;
+}
+
+.box-two {
+  background-color: purple;
+}
+
+.box-three {
+  background-color: red;
+}
+
+/* Flexbox */
+.box-container {
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+  
+  flex-direction: column;
+  background-color: red;
+}
+
+.box-children {
+  display: flex;
+  justify-content: space-between;
+}

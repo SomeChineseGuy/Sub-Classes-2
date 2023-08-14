@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #343a40;
+  padding: 0 20px 0 20px;
+}
+
+.navbar .left {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.navbar .right {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.navbar h3 { 
+  color: rgba(255,255,255,0.55);
+  cursor: pointer;
+}
+
+.navbar h3:hover {
+  color: rgba(255,255,255);
+}
+
+.navbar .white {
+  color: white;
+}

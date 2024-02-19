@@ -1,0 +1,7 @@
+.inner {
+  background-color: green;
+}
+
+.inner > h1 {
+  color: red;
+}

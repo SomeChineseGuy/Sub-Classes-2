@@ -1,0 +1,104 @@
+.navbar { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-lg,
+.logo-sm {
+  width: 140px;
+}
+
+.logo-sm {
+  display: none;
+}
+
+.hamburger {
+  font-size: 30px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 20px;
+}
+
+.menu-item-container {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 75vw;
+  max-width: 1200px;
+}
+
+.menu-item-container-mobile {
+  list-style-type: none;
+  
+}
+
+.menu-container-mobile {
+  display: none;
+  background-color: green;
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  top: 0;
+  margin: 0;
+  width: 200px;
+}
+
+.x {
+  font-size: 30px;
+  margin: 0;
+  padding: 20px;
+}
+
+.active {
+  display: none;
+}
+
+
+@media screen and (max-width: 959.98px) {
+  .logo-sm {
+    display: block;
+  }
+
+  .logo-lg {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu-item-container {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .logo-sm {
+    width: 250px;
+  }
+}
+
+
+
+/* 
+  Min-width (media-breakpoint-up):
+  576 | sm
+  768 | md
+  960 | lg
+  1200 | xl
+
+  Max-width (media-breakpoint-down):
+  575.98 | xs
+  767.98 | sm
+  959.98 | md
+  1199.98 | lg
+*/

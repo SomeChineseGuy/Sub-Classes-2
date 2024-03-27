@@ -1,0 +1,6 @@
+.navbar {
+  background-color: hotpink;
+}
+.navbar:hover {
+  background-color: green;
+}

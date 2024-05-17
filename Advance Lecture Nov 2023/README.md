@@ -11,8 +11,27 @@
 index.js - is calling the app.js
 app.js - the complete react app
 
-app.get('/about/', (req, res) => {
-res.render('about')
-})
+
 
 /src/components/Navbar
+
+Server 
+- Who is being connected to
+- Host
+- Dev
+
+Client 
+- Who is being connect
+- Connection
+- Users
+
+Server Side
+app.get('/about/', (req, res) => {
+  res.render('about')
+})
+
+app.post('/urls/' (req,res) => {
+  // Get the data
+  // do something with it
+  // res.redirect('/about')
+})

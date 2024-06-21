@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+    }
+
+    section, nav {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    div {
+      text-align: left;
+      border: 3px solid tomato;
+      padding: 20px;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .button {
+      color: white;
+      padding: 10px 20px;
+      background-color: rgb(205, 39, 10);
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: rgb(247, 130, 109);
+      color: black;
+    }
+    .no-borders {
+      border: none;
+    }
+
+    .select-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to LHL Fast foods!</h1>
+  <!-- Display values -->
+
+  <!-- Run JS functions -->
+  <% for(let combo in combos) { %>
+    <div class="container">
+      <h2><a href="/combo/<%= combo %>"> Combo #  <%= combo  %></a></h2>
+      <h2>Main: <%= combos[combo].main %></h2>
+      <h2>Side: <%= combos[combo].side %></h2>
+      <h2>Drink: <%= combos[combo].drink %></h2>
+      <form action="/combo/<%= combo %>/edit" method="POST">
+        <div>
+          <label for="main">Main</label>
+          <input type="text" name="main">
+        </div>
+        <div>
+          <label for="side">Side</label>
+          <input type="text" name="side">
+        </div>
+        <div>
+          <label for="drink">Drink</label>
+          <input type="text" name="drink">
+        </div>
+        <button type="submit">Edit</button>
+      </form>
+      <form action="/combo/<%= combo %>/delete" method="POST">
+        <button type="submit">Delete Me!</button>
+      </form>
+    </div>
+  <% } %>
+</body>
+</html>

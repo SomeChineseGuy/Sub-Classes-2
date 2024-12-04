@@ -1,0 +1,43 @@
+.box {
+  background-color: tomato;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background-color: aqua;
+}
+
+.red {
+  color: red
+}
+
+.text-area {
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+}
+
+
+/* 
+@media(max-width: 750px) {
+  body {
+    background-color: red;
+  }
+} */
+
+.green {
+  background-color: green;
+}
+
+.hide {
+  display: none;
+}

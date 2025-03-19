@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  width: 33%;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.card-btn {
+  background-color: blue;
+  color: white;
+}
